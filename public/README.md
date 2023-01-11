@@ -1,4 +1,4 @@
-#Twotter - A simple Twitter clone
+# Twotter - A simple Twitter clone
 
 ## Todo
 - [x] Create a new project
