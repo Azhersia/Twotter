@@ -3,11 +3,11 @@
 ## Todo
 - [x] Create a new project
 - [x] Add Tailwind CSS
-- [ ] Design UI
+- [x] Design UI
+- [ ] Create feed
 - [ ] Add Firebase
 - [ ] Add authentication
 - [ ] Add Database
-- [ ] Create a feed
 - [ ] Add Sign up
 - [ ] Add Sign in
 - [ ] Add Sign out
