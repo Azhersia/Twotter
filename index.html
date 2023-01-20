@@ -8,61 +8,72 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/phosphor-icons"></script>
   <title>Twotter</title>
 </head>
 
-<body class="flex justify-center items-start gap-5 ">
+<body class="flex flex-col justify-center items-start md:gap-4 md:flex-row">
+  <section
+    class="sticky top-0 bg-white w-full border-b border-gray-200 flex justify-between items-center px-4 md:max-w-xs md:top-4 md:border-none md:p-0 md:w-auto">
+    <img src="logo.png" alt="Logo" class="w-14">
 
-  <section class=" top-4 sticky">
-    <img src="logo.png" class="w-14" alt="Logo">
-
+    <button class="border-2 border-blue-500 text-blue-500 rounded-2xl py-1 px-6 md:hidden">Log in</button>
   </section>
-  <main class="max-w-[598px] w-full border-x border-gray-200 p-4">
+
+  <main class="max-w-[598px] w-full border-gray-200 p-4 md:border-x">
+    <div id="newTwoot" class="hidden flex gap-4 mb-4">
+      <div class="w-14 h-14 rounded-full">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="w-full">
+        <textarea placeholder="Engage i cancel culture..." class="w-full mb-2" rows="2"></textarea>
+        <button id="twoot"
+          class="float-right bg-blue-500 px-4 py-1 rounded-3xl text-white hover:bg-blue-700">Twoot</button>
+      </div>
+    </div>
+
 
     <h1 class="font-bold text-2xl">Twoots</h1>
+
+    <div id="moreTweets" class="hidden w-full py-4 text-center border-t border-b text-blue-500 cursor-pointer">
+      <!--  new Twootcount goes here -->
+    </div>
+
     <ul class="space-y-6 mt-6">
-      <li class="flex gap-4 border-b border-gray-300 pb-4">
-        <img src="logo.png" alt="profile image" class="w-12 h-12 bg-gray-300 rounded-full">
-
-        <div>
-          <div class="flex gap-2 text-gray-500">
-            <span class="font-semibold text-black">Matti helkäl</span>
-            <span>@matti42</span>
-            <span>13:56</span>
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At adipisci a nam labore mollitia, reiciendis
-            reprehenderit sit error, soluta totam nihil esse debitis cumque quisquam eveniet natus, suscipit inventore
-            assumenda.</p>
-          <div class="flex items-center gap-1">
-            <i class="ph-heart text-xl"></i>
-            <span>23</span>
-          </div>
-        </div>
-      </li>
-      <li class="flex gap-4 border-b border-gray-300 pb-4">
-        <img src="logo.png" alt="profile image" class="w-12 h-12 bg-gray-300 rounded-full">
-
-        <div>
-          <div class="flex gap-2 text-gray-500">
-            <span class="font-semibold text-black">Matti helkäl</span>
-            <span>@matti42</span>
-            <span>13:56</span>
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At adipisci a nam labore mollitia, reiciendis
-            reprehenderit sit error, soluta totam nihil esse debitis cumque quisquam eveniet natus, suscipit inventore
-            assumenda.</p>
-          <div class="flex items-center gap-1">
-            <i class="ph-heart text-xl"></i>
-            <span>23</span>
-          </div>
-        </div>
-      </li>
+      <!--  Twoots go here -->
     </ul>
   </main>
-  <section class="right bg-red-500 top-4 right-0 sticky">Log in</section>
 
-  <script type="module" src="/main"></script>
+  <section class="top-4 left-0 sticky max-w-xs hidden md:block">
+    <div id="login" class="border border-gray-200 p-4 rounded-xl space-y-6 mb-2">
+      <h2 class="font-bold text-xl">New to Twotter?</h2>
+
+      <form class="space-y-4">
+        <input required placeholder="Email" type="email" class="border border-gray-300 py-2 px-4 rounded-3xl w-full">
+        <input required placeholder="Password" type="password"
+          class="border border-gray-300 p-2 px-4  rounded-3xl w-full">
+
+        <button
+          class="border border-gray-300 p-2 rounded-3xl flex justify-center items-center gap-2 w-full hover:bg-gray-200">
+          <i class="ph-paper-plane-right text-2xl"></i>
+          Sign in
+        </button>
+      </form>
+      <p class="text-sm text-gray-500">By signing up, you agree to the Terms of Service and Privacy Policy, including
+        Cookie Use.</p>
+    </div>
+
+    <div id="logout" class="hidden border border-gray-300 py-2 px-4 rounded-3xl w-full min-w-[220px]">
+      <h2></h2>
+      <button
+        class="border border-gray-300 p-2 rounded-3xl flex justify-center items-center gap-2 w-full hover:bg-gray-200">
+        <i class="ph-paper-plane-right text-2xl"></i>
+        Sign out</button>
+    </div>
+
+    <p class="text-sm text-gray-500 pl-4">© 2023 Twotter, Inc.</p>
+  </section>
+
+  <script type="module" src="/main.js"></script>
   <script src="https://unpkg.com/phosphor-icons"></script>
 </body>
 

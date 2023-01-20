@@ -4,16 +4,16 @@
 - [x] Create a new project
 - [x] Add Tailwind CSS
 - [x] Design UI
-- [ ] Create feed
-- [ ] Add Firebase
-- [ ] Add authentication
-- [ ] Add Database
-- [ ] Add Sign up
-- [ ] Add Sign in
-- [ ] Add Sign out
-- [ ] Create twoot
+- [x] Create feed
+- [x] Create supabase project
+- [x] Add Supabase SDK (software development kit)
+- [x] Add Database
+- [X] Add Sign up
+- [X] Add Sign in
+- [X] Add Sign out
+- [X] Create twoot
+- [X] Uppdate feed
 - [ ] Delete own twoot
-- [ ] Like/unlike twoot
 
 
 ## Extra
