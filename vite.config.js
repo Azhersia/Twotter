@@ -1,3 +1,3 @@
 export default {
-  base: '/twotter/'
+  base: '/Twotter/'
 }
